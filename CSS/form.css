@@ -1,0 +1,141 @@
+@import url('../CSS/fonts.css');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --Josefin : 'Josefin', cursive;
+  --Lexend: 'Lexend', cursive;   
+}
+
+body{
+  min-height: 70vh;
+  background: url(../PHOTOS/Form/form.jpg) no-repeat;
+  background-size: cover;
+  font-family: var(--Lexend);
+}
+
+.contact-section{
+  width: 100%;
+  display: flex;
+  margin-top: 130px;
+  justify-content: center;
+  align-items: center;
+}
+.contact-form{
+  max-width: 700px;
+  margin-right: 50px;
+}
+
+.contact-info, .contact-form{
+  flex: 1;
+}
+
+.contact-form h2{
+  color: #fff;
+  text-align: center;
+  font-size: 35px;
+  text-shadow: 0px 0px 10px black;
+  margin-bottom: 30px;
+}
+
+.contact-form .text-box{
+  background: #000;
+  color: #fff;
+  border-bottom: 3px solid white;
+  width: calc(50% - 10px);
+  height: 50px;
+  padding: 12px;
+  font-size: 15px;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  opacity: 0.9;
+  border-top: none;
+}
+
+.contact-form .text-box:nth-child(odd){
+  margin-right: 15px;
+}
+
+.contact-form textarea{
+  background: #000;
+  color: #fff;
+  border-bottom: 3px solid white;
+  border-top: none;
+  font-family: var(--Lexend);
+  width: 100%;
+  padding: 12px;
+  font-size: 15px;
+  min-height: 200px;
+  max-height: 400px;
+  resize: vertical;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+.contact-form .send-btn{
+  float: right;
+  background: linear-gradient(to left, #f8c291 0%, #e84118);
+  color: black;
+  border: none;
+  width: 120px;
+  height: 40px;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  border-radius: 20px;
+  cursor: pointer;  
+  transition: 1s;
+}
+.rights{
+  text-align: center;
+  font-family: var(--Josefin);
+  opacity: 0.9;
+  padding-top: 15px;
+  height: 47px;
+  color: whitesmoke;
+  margin-top: 100px;
+  background-color:black;
+}
+
+.rights h4 a{
+  color:whitesmoke ;
+  text-decoration: none;
+}
+
+.contact-form .send-btn:hover{
+  background:transparent;
+  border: 1px solid black;
+  color: grey;
+}
+
+@media screen and (max-width: 950px){
+body{
+  background: url(../PHOTOS/Form/formmobile.png) no-repeat;
+  background-size: cover;
+}
+  .contact-section{
+    flex-direction: column;
+  }
+
+  .contact-info, .contact-form{
+    margin: 30px 50px;
+  }
+
+  .contact-form h2{
+    font-size: 28px;
+  }
+
+  .contact-form .text-box{
+    width: 100%;
+  }
+  .rights{
+    padding-top: 8px;
+}
+}

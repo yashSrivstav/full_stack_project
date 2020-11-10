@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Submit Your Entry</title>
+  <link rel="stylesheet" href="../CSS/form.css">
+  <link rel="stylesheet" href="../CSS/aos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+</head>
+
+<body>
+  <div class="contact-section">
+    <div class="contact-form">
+      <h2 data-aos="fade-down" data-aos-delay="100">Submit Your Entry</h2>
+      <form class="contact">
+        <input data-aos="fade-right" data-aos-delay="100" type="text" name="name" class="text-box"
+          placeholder="Your Name" required>
+        <input data-aos="fade-left" data-aos-delay="100" type="email" name="email" class="text-box"
+          placeholder="Your Email" required>
+        <input data-aos="fade-right" data-aos-delay="200" type="text" name="insta" class="text-box"
+          placeholder="Your Instagram ID" required>
+        <input data-aos="fade-left" data-aos-delay="200" list="Category" class="text-box" name="Category"
+          placeholder="Category (Quote,Poem,Letter etc.)" required>
+        <datalist id="Category">
+          <option value="Open Letter"></option>
+          <option value="Sentiment"> </option>
+          <option value="Poem"> </option>
+          <option value="Quote"> </option>
+          <option value="Micro-tales"> </option>
+        </datalist>
+        <textarea data-aos="zoom-in" data-aos-delay="300" name="message" rows="5" placeholder="Your Message"
+          required></textarea>
+        <input data-aos="flip-down" data-aos-delay="400" type="submit" name="submit" class="send-btn" value="Send">
+      </form>
+    </div>
+  </div>
+  <div class="rights">
+    <h4>
+      Copyright ©2020 All rights reserved | made by
+      <a href="https://www.instagram.com/thewriter.nextdoor/" target="_blank">The Writer Next Door <i
+          class="fab fa-instagram"></i></a>
+    </h4>
+  </div>
+  <script src="../JS/aos.js"></script>
+  <script src="../JS/form.js"></script>
+
+</body>
+
+</html>
