@@ -16,6 +16,7 @@ body{
   background: url(../PHOTOS/Form/form.jpg) no-repeat;
   background-size: cover;
   font-family: var(--Lexend);
+  overflow-x: hidden;
 }
 
 .contact-section{
