@@ -10,13 +10,15 @@
   --Josefin : 'Josefin', cursive;
   --Lexend: 'Lexend', cursive;   
 }
+html,body{
+  overflow-x: hidden;
 
+}
 body{
   min-height: 70vh;
   background: url(../PHOTOS/Form/form.jpg) no-repeat;
   background-size: cover;
   font-family: var(--Lexend);
-  overflow-x: hidden;
 }
 
 .contact-section{
